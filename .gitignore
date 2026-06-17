@@ -1,0 +1,8 @@
+*.exe
+*.pdb
+*.obj
+*.dll
+*.rar
+
+raylib-build/
+.dub/
