@@ -1,0 +1,18 @@
+name "badmusicplayer"
+description "Windows local music player with immersive visualization"
+copyright "Copyright 2026"
+license "Unlicense"
+
+targetType "executable"
+targetName "BadMusicPlayer"
+betterC
+
+dependency "raylib-d" version="~>6.0"
+
+sourcePaths "source"
+importPaths "source"
+sourceFiles "libs/raylib.lib"
+
+libs "user32" "winmm" "gdi32" "shell32" "ole32" "oleaut32" "advapi32"
+
+lflags "/SUBSYSTEM:WINDOWS" "/ENTRY:mainCRTStartup" platform="windows"
